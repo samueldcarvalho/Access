@@ -64,7 +64,7 @@ namespace frm_Main
             return;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void separatorControl4_Click(object sender, EventArgs e)
         {
 
         }

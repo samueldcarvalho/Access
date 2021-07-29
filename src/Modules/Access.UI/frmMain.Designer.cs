@@ -45,16 +45,40 @@ namespace frm_Main
             this.panel_Logo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_buscar = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
+            this.txt_Tipo_Acesso = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.separatorControl5 = new DevExpress.XtraEditors.SeparatorControl();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_Id_Acesso = new System.Windows.Forms.TextBox();
+            this.separatorControl4 = new DevExpress.XtraEditors.SeparatorControl();
+            this.chkbox_Central = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Nome_Filial = new System.Windows.Forms.TextBox();
+            this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_Rede_Busca = new System.Windows.Forms.TextBox();
+            this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView_Buscar = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_favoritos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnl_busca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             this.pnl_informacoes.SuspendLayout();
             this.panel_Logo.SuspendLayout();
             this.pnl_buscar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Buscar)).BeginInit();
             this.panel3.SuspendLayout();
@@ -63,6 +87,7 @@ namespace frm_Main
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.panel1.Controls.Add(this.btn_favoritos);
             this.panel1.Controls.Add(this.btn_adicionar);
             this.panel1.Controls.Add(this.btn_buscar);
             this.panel1.Controls.Add(this.pnl_busca);
@@ -262,10 +287,27 @@ namespace frm_Main
             this.label2.TabIndex = 1;
             this.label2.Text = "Access";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pnl_buscar
             // 
+            this.pnl_buscar.Controls.Add(this.label9);
+            this.pnl_buscar.Controls.Add(this.textBox1);
+            this.pnl_buscar.Controls.Add(this.separatorControl6);
+            this.pnl_buscar.Controls.Add(this.txt_Tipo_Acesso);
+            this.pnl_buscar.Controls.Add(this.label8);
+            this.pnl_buscar.Controls.Add(this.separatorControl5);
+            this.pnl_buscar.Controls.Add(this.label7);
+            this.pnl_buscar.Controls.Add(this.txt_Id_Acesso);
+            this.pnl_buscar.Controls.Add(this.separatorControl4);
+            this.pnl_buscar.Controls.Add(this.chkbox_Central);
+            this.pnl_buscar.Controls.Add(this.label6);
+            this.pnl_buscar.Controls.Add(this.txt_Nome_Filial);
+            this.pnl_buscar.Controls.Add(this.separatorControl3);
+            this.pnl_buscar.Controls.Add(this.label5);
+            this.pnl_buscar.Controls.Add(this.label4);
+            this.pnl_buscar.Controls.Add(this.label3);
+            this.pnl_buscar.Controls.Add(this.txt_Rede_Busca);
+            this.pnl_buscar.Controls.Add(this.separatorControl2);
             this.pnl_buscar.Controls.Add(this.gridControl1);
             this.pnl_buscar.Controls.Add(this.panel3);
             this.pnl_buscar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -274,12 +316,201 @@ namespace frm_Main
             this.pnl_buscar.Size = new System.Drawing.Size(501, 559);
             this.pnl_buscar.TabIndex = 2;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(50, 486);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 16);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Senha";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(76, 504);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(343, 15);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.Text = "$up0rte@";
+            // 
+            // separatorControl6
+            // 
+            this.separatorControl6.BackColor = System.Drawing.Color.Transparent;
+            this.separatorControl6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.separatorControl6.Location = new System.Drawing.Point(50, 510);
+            this.separatorControl6.Name = "separatorControl6";
+            this.separatorControl6.Size = new System.Drawing.Size(400, 23);
+            this.separatorControl6.TabIndex = 21;
+            // 
+            // txt_Tipo_Acesso
+            // 
+            this.txt_Tipo_Acesso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
+            this.txt_Tipo_Acesso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Tipo_Acesso.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Tipo_Acesso.Location = new System.Drawing.Point(374, 454);
+            this.txt_Tipo_Acesso.Name = "txt_Tipo_Acesso";
+            this.txt_Tipo_Acesso.ReadOnly = true;
+            this.txt_Tipo_Acesso.Size = new System.Drawing.Size(75, 15);
+            this.txt_Tipo_Acesso.TabIndex = 19;
+            this.txt_Tipo_Acesso.Text = "TeamViewer";
+            this.txt_Tipo_Acesso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(373, 435);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Tipo:";
+            // 
+            // separatorControl5
+            // 
+            this.separatorControl5.BackColor = System.Drawing.Color.Transparent;
+            this.separatorControl5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.separatorControl5.Location = new System.Drawing.Point(370, 461);
+            this.separatorControl5.Name = "separatorControl5";
+            this.separatorControl5.Size = new System.Drawing.Size(80, 23);
+            this.separatorControl5.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(50, 437);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(24, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "ID:";
+            // 
+            // txt_Id_Acesso
+            // 
+            this.txt_Id_Acesso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
+            this.txt_Id_Acesso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Id_Acesso.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Id_Acesso.Location = new System.Drawing.Point(76, 455);
+            this.txt_Id_Acesso.Name = "txt_Id_Acesso";
+            this.txt_Id_Acesso.ReadOnly = true;
+            this.txt_Id_Acesso.Size = new System.Drawing.Size(251, 15);
+            this.txt_Id_Acesso.TabIndex = 14;
+            this.txt_Id_Acesso.Text = "1123456789/server-1s21sd/administrator";
+            // 
+            // separatorControl4
+            // 
+            this.separatorControl4.BackColor = System.Drawing.Color.Transparent;
+            this.separatorControl4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.separatorControl4.Location = new System.Drawing.Point(50, 461);
+            this.separatorControl4.Name = "separatorControl4";
+            this.separatorControl4.Size = new System.Drawing.Size(312, 23);
+            this.separatorControl4.TabIndex = 15;
+            this.separatorControl4.Click += new System.EventHandler(this.separatorControl4_Click);
+            // 
+            // chkbox_Central
+            // 
+            this.chkbox_Central.AutoSize = true;
+            this.chkbox_Central.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chkbox_Central.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.chkbox_Central.Location = new System.Drawing.Point(376, 392);
+            this.chkbox_Central.Name = "chkbox_Central";
+            this.chkbox_Central.Size = new System.Drawing.Size(74, 20);
+            this.chkbox_Central.TabIndex = 6;
+            this.chkbox_Central.Text = "Central";
+            this.chkbox_Central.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(50, 379);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 16);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Filial:";
+            // 
+            // txt_Nome_Filial
+            // 
+            this.txt_Nome_Filial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
+            this.txt_Nome_Filial.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Nome_Filial.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Nome_Filial.Location = new System.Drawing.Point(76, 397);
+            this.txt_Nome_Filial.Name = "txt_Nome_Filial";
+            this.txt_Nome_Filial.ReadOnly = true;
+            this.txt_Nome_Filial.Size = new System.Drawing.Size(265, 15);
+            this.txt_Nome_Filial.TabIndex = 11;
+            this.txt_Nome_Filial.Text = "MINAS MAIS";
+            // 
+            // separatorControl3
+            // 
+            this.separatorControl3.BackColor = System.Drawing.Color.Transparent;
+            this.separatorControl3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.separatorControl3.Location = new System.Drawing.Point(50, 403);
+            this.separatorControl3.Name = "separatorControl3";
+            this.separatorControl3.Size = new System.Drawing.Size(312, 23);
+            this.separatorControl3.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(124, 292);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(50, 291);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Filicodigo: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(50, 331);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Rede:";
+            // 
+            // txt_Rede_Busca
+            // 
+            this.txt_Rede_Busca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
+            this.txt_Rede_Busca.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Rede_Busca.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Rede_Busca.Location = new System.Drawing.Point(76, 349);
+            this.txt_Rede_Busca.Name = "txt_Rede_Busca";
+            this.txt_Rede_Busca.ReadOnly = true;
+            this.txt_Rede_Busca.Size = new System.Drawing.Size(343, 15);
+            this.txt_Rede_Busca.TabIndex = 3;
+            this.txt_Rede_Busca.Text = "MINAS MAIS";
+            // 
+            // separatorControl2
+            // 
+            this.separatorControl2.BackColor = System.Drawing.Color.Transparent;
+            this.separatorControl2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.separatorControl2.Location = new System.Drawing.Point(50, 355);
+            this.separatorControl2.Name = "separatorControl2";
+            this.separatorControl2.Size = new System.Drawing.Size(400, 23);
+            this.separatorControl2.TabIndex = 6;
+            // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(54, 129);
+            this.gridControl1.Location = new System.Drawing.Point(50, 96);
             this.gridControl1.MainView = this.gridView_Buscar;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(393, 356);
+            this.gridControl1.Size = new System.Drawing.Size(400, 186);
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_Buscar});
@@ -315,6 +546,21 @@ namespace frm_Main
             this.label1.Text = "Buscar";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_favoritos
+            // 
+            this.btn_favoritos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.btn_favoritos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_favoritos.FlatAppearance.BorderSize = 0;
+            this.btn_favoritos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_favoritos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_favoritos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_favoritos.Location = new System.Drawing.Point(0, 259);
+            this.btn_favoritos.Name = "btn_favoritos";
+            this.btn_favoritos.Size = new System.Drawing.Size(250, 35);
+            this.btn_favoritos.TabIndex = 14;
+            this.btn_favoritos.Text = "Favoritos";
+            this.btn_favoritos.UseVisualStyleBackColor = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -336,6 +582,12 @@ namespace frm_Main
             this.panel_Logo.ResumeLayout(false);
             this.panel_Logo.PerformLayout();
             this.pnl_buscar.ResumeLayout(false);
+            this.pnl_buscar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Buscar)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -351,7 +603,7 @@ namespace frm_Main
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_configuracoes;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Id_Acesso;
         private System.Windows.Forms.Panel pnl_informacoes;
         private System.Windows.Forms.Panel pnl_busca;
         private System.Windows.Forms.Button btn_buscar;
@@ -368,6 +620,24 @@ namespace frm_Main
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_Buscar;
+        private System.Windows.Forms.TextBox txt_Rede_Busca;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox chkbox_Central;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_Nome_Filial;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl3;
+        private System.Windows.Forms.Label label7;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl4;
+        private System.Windows.Forms.TextBox txt_Tipo_Acesso;
+        private System.Windows.Forms.Label label8;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl6;
+        private System.Windows.Forms.Button btn_favoritos;
     }
 }
 
