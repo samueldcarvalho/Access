@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 using Access.src.Modules.Access.DAL;
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace frm_Main
 {
@@ -19,30 +21,19 @@ namespace frm_Main
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txt_buscar.Text) || string.IsNullOrWhiteSpace(txt_buscar.Text))
+            if (pnl_busca.Visible == false)
             {
-                switch (pnl_busca.Visible)
-                {
-                    case true:
-                        pnl_busca.Visible = false;
-                        LimparFiltros();
-                        break;
-                    case false:
-                        pnl_busca.Visible = true;
-                        break;
-                }
+                pnl_busca.Visible = true;
+                txt_buscar.Focus();
+                return;
             }
-
-            if (!string.IsNullOrEmpty(txt_buscar.Text) || !string.IsNullOrWhiteSpace(txt_buscar.Text) && pnl_buscar.Visible == true)
-            {
-                gridControl1.DataSource = _objpnl_BuscarDAL.ListarAcessos(txt_buscar.Text);
-                txt_buscar.Text = "";
-            }
-
+            gridControl_Busca.DataSource = _objpnl_BuscarDAL.ListarAcessos(txt_buscar.Text, ckbox_busca_rede.Checked, VerificarFiltroServidor());
+            txt_buscar.Text = "";
+            txt_buscar.Focus();
             
         }
 
-        public int VerificarCentralFilial()
+        public int VerificarFiltroServidor()
         {
             int numRef = 0;
 
@@ -52,7 +43,7 @@ namespace frm_Main
                 numRef = 2;
             if (rdbtn_busca_central.Checked == false && rdbtn_busca_filial.Checked == false)
                 numRef = 0;
-            return numRef;           
+            return numRef;
         }
 
         public void LimparFiltros()
@@ -64,9 +55,26 @@ namespace frm_Main
             return;
         }
 
-        private void separatorControl4_Click(object sender, EventArgs e)
+        private void gridView_Buscar_SelectionChanged(object sender, DevExpress.Data.SelectionChangedEventArgs e)
         {
+            int countLines = gridView_Buscar.SelectedRowsCount;
 
+            if (countLines > 0)
+            {
+                DataTable dt = new DataTable();
+                var getId = gridView_Buscar.GetFocusedRowCellValue(gridColumn_key);
+                //slcId = dgv.SelectedRows[0].Cells[0].ToString();
+                dt = _objpnl_BuscarDAL.ObterInformacoes((int)getId);
+
+                lbl_filicodigo.Text = dt.Rows[0].Field<Int32>("codigo_filial_automatiza").ToString();
+                txt_nome_rede.Text = dt.Rows[0].Field<string>("rede_nome");
+                txt_nome_filial.Text = dt.Rows[0].Field<string>("filial_nome");
+                txt_id_acesso.Text = dt.Rows[0].Field<string>("filial_id_acesso");
+                txt_senha_acesso.Text = dt.Rows[0].Field<string>("filial_senha_acesso");
+                txt_tipo_acesso.Text = dt.Rows[0].Field<string>("filial_tipo_acesso");
+                ckbox_Central.Checked = Convert.ToBoolean(dt.Rows[0].Field<int>("filial_central"));
+            }
         }
+
     }
-}
+    }
