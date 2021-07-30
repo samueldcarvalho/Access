@@ -232,9 +232,9 @@ namespace frm_Main
             this.pnl_informacoes.Controls.Add(this.btn_versao);
             this.pnl_informacoes.Controls.Add(this.btn_configuracoes);
             this.pnl_informacoes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_informacoes.Location = new System.Drawing.Point(0, 445);
+            this.pnl_informacoes.Location = new System.Drawing.Point(0, 448);
             this.pnl_informacoes.Name = "pnl_informacoes";
-            this.pnl_informacoes.Size = new System.Drawing.Size(250, 79);
+            this.pnl_informacoes.Size = new System.Drawing.Size(250, 76);
             this.pnl_informacoes.TabIndex = 10;
             // 
             // btn_versao
@@ -245,7 +245,7 @@ namespace frm_Main
             this.btn_versao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_versao.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_versao.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_versao.Location = new System.Drawing.Point(0, 1);
+            this.btn_versao.Location = new System.Drawing.Point(0, -2);
             this.btn_versao.Name = "btn_versao";
             this.btn_versao.Size = new System.Drawing.Size(250, 39);
             this.btn_versao.TabIndex = 10;
@@ -260,7 +260,7 @@ namespace frm_Main
             this.btn_configuracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_configuracoes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_configuracoes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_configuracoes.Location = new System.Drawing.Point(0, 40);
+            this.btn_configuracoes.Location = new System.Drawing.Point(0, 37);
             this.btn_configuracoes.Name = "btn_configuracoes";
             this.btn_configuracoes.Size = new System.Drawing.Size(250, 39);
             this.btn_configuracoes.TabIndex = 9;
@@ -340,7 +340,7 @@ namespace frm_Main
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(50, 441);
+            this.label9.Location = new System.Drawing.Point(50, 432);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 16);
             this.label9.TabIndex = 22;
@@ -351,7 +351,7 @@ namespace frm_Main
             this.txt_senha_acesso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
             this.txt_senha_acesso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_senha_acesso.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_senha_acesso.Location = new System.Drawing.Point(76, 459);
+            this.txt_senha_acesso.Location = new System.Drawing.Point(76, 450);
             this.txt_senha_acesso.Name = "txt_senha_acesso";
             this.txt_senha_acesso.ReadOnly = true;
             this.txt_senha_acesso.Size = new System.Drawing.Size(343, 15);
@@ -362,7 +362,7 @@ namespace frm_Main
             // 
             this.separatorControl6.BackColor = System.Drawing.Color.Transparent;
             this.separatorControl6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.separatorControl6.Location = new System.Drawing.Point(50, 465);
+            this.separatorControl6.Location = new System.Drawing.Point(50, 456);
             this.separatorControl6.Name = "separatorControl6";
             this.separatorControl6.Size = new System.Drawing.Size(400, 23);
             this.separatorControl6.TabIndex = 21;
@@ -372,7 +372,7 @@ namespace frm_Main
             this.txt_tipo_acesso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
             this.txt_tipo_acesso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_tipo_acesso.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_tipo_acesso.Location = new System.Drawing.Point(374, 409);
+            this.txt_tipo_acesso.Location = new System.Drawing.Point(374, 400);
             this.txt_tipo_acesso.Name = "txt_tipo_acesso";
             this.txt_tipo_acesso.ReadOnly = true;
             this.txt_tipo_acesso.Size = new System.Drawing.Size(75, 15);
@@ -384,7 +384,7 @@ namespace frm_Main
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(373, 390);
+            this.label8.Location = new System.Drawing.Point(373, 381);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 16);
             this.label8.TabIndex = 18;
@@ -394,7 +394,7 @@ namespace frm_Main
             // 
             this.separatorControl5.BackColor = System.Drawing.Color.Transparent;
             this.separatorControl5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.separatorControl5.Location = new System.Drawing.Point(370, 416);
+            this.separatorControl5.Location = new System.Drawing.Point(370, 407);
             this.separatorControl5.Name = "separatorControl5";
             this.separatorControl5.Size = new System.Drawing.Size(80, 23);
             this.separatorControl5.TabIndex = 17;
@@ -403,7 +403,7 @@ namespace frm_Main
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(50, 392);
+            this.label7.Location = new System.Drawing.Point(50, 383);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(24, 16);
             this.label7.TabIndex = 16;
@@ -414,7 +414,7 @@ namespace frm_Main
             this.txt_id_acesso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
             this.txt_id_acesso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_id_acesso.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_id_acesso.Location = new System.Drawing.Point(76, 410);
+            this.txt_id_acesso.Location = new System.Drawing.Point(76, 401);
             this.txt_id_acesso.Name = "txt_id_acesso";
             this.txt_id_acesso.ReadOnly = true;
             this.txt_id_acesso.Size = new System.Drawing.Size(251, 15);
@@ -425,7 +425,7 @@ namespace frm_Main
             // 
             this.separatorControl4.BackColor = System.Drawing.Color.Transparent;
             this.separatorControl4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.separatorControl4.Location = new System.Drawing.Point(50, 416);
+            this.separatorControl4.Location = new System.Drawing.Point(50, 407);
             this.separatorControl4.Name = "separatorControl4";
             this.separatorControl4.Size = new System.Drawing.Size(312, 23);
             this.separatorControl4.TabIndex = 15;
@@ -437,7 +437,7 @@ namespace frm_Main
             this.ckbox_Central.CheckAlign = System.Drawing.ContentAlignment.TopRight;
             this.ckbox_Central.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ckbox_Central.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ckbox_Central.Location = new System.Drawing.Point(372, 347);
+            this.ckbox_Central.Location = new System.Drawing.Point(370, 347);
             this.ckbox_Central.Name = "ckbox_Central";
             this.ckbox_Central.Size = new System.Drawing.Size(74, 20);
             this.ckbox_Central.TabIndex = 6;
@@ -479,7 +479,7 @@ namespace frm_Main
             // 
             this.lbl_filicodigo.AutoSize = true;
             this.lbl_filicodigo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_filicodigo.Location = new System.Drawing.Point(432, 524);
+            this.lbl_filicodigo.Location = new System.Drawing.Point(431, 482);
             this.lbl_filicodigo.Name = "lbl_filicodigo";
             this.lbl_filicodigo.Size = new System.Drawing.Size(14, 16);
             this.lbl_filicodigo.TabIndex = 10;
@@ -489,7 +489,7 @@ namespace frm_Main
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(353, 524);
+            this.label4.Location = new System.Drawing.Point(352, 482);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 16);
             this.label4.TabIndex = 9;
